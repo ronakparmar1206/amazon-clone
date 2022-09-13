@@ -1,0 +1,175 @@
+[debug] [2022-09-10T11:15:26.753Z] ----------------------------------------------------------------------
+[debug] [2022-09-10T11:15:26.755Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-10T11:15:26.755Z] CLI Version:   11.8.0
+[debug] [2022-09-10T11:15:26.756Z] Platform:      win32
+[debug] [2022-09-10T11:15:26.756Z] Node Version:  v18.5.0
+[debug] [2022-09-10T11:15:26.757Z] Time:          Sat Sep 10 2022 16:45:26 GMT+0530 (India Standard Time)
+[debug] [2022-09-10T11:15:26.757Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-10T11:15:26.834Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-10T11:15:26.834Z] > authorizing via signed-in user (parmarronak1090.saurabhinfosys@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\reactjs\amazonclone\amazonclone
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-10T11:15:39.584Z] Using project from CLI flag: clone-f3039
+[debug] [2022-09-10T11:15:39.586Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-f3039 [none]
+[debug] [2022-09-10T11:15:40.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-f3039 200
+[debug] [2022-09-10T11:15:40.283Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-f3039 {"projectId":"clone-f3039","projectNumber":"898226497809","displayName":"amazonclone","name":"projects/clone-f3039","resources":{"hostingSite":"clone-f3039"},"state":"ACTIVE","etag":"1_1d34b04d-96e8-402f-9185-d029af07df85"}
+[info] i  Using project clone-f3039 (amazonclone) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\reactjs\amazonclone\amazonclone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=60071320&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-09-10T11:16:22.055Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-09-10T11:16:22.057Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-09-10T11:16:22.445Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-09-10T11:16:22.445Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-09-10T11:16:22.474Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-09-10T11:16:22.872Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-09-10T11:16:22.873Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ronakparmarswaggy","id":109799876,"node_id":"U_kgDOBotpxA","avatar_url":"https://avatars.githubusercontent.com/u/109799876?v=4","gravatar_id":"","url":"https://api.github.com/users/ronakparmarswaggy","html_url":"https://github.com/ronakparmarswaggy","followers_url":"https://api.github.com/users/ronakparmarswaggy/followers","following_url":"https://api.github.com/users/ronakparmarswaggy/following{/other_user}","gists_url":"https://api.github.com/users/ronakparmarswaggy/gists{/gist_id}","starred_url":"https://api.github.com/users/ronakparmarswaggy/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ronakparmarswaggy/subscriptions","organizations_url":"https://api.github.com/users/ronakparmarswaggy/orgs","repos_url":"https://api.github.com/users/ronakparmarswaggy/repos","events_url":"https://api.github.com/users/ronakparmarswaggy/events{/privacy}","received_events_url":"https://api.github.com/users/ronakparmarswaggy/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":0,"following":0,"created_at":"2022-07-22T11:02:08Z","updated_at":"2022-09-01T08:46:13Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":10505,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ronakparmarswaggy 
+[info] 
+[debug] [2022-09-10T11:16:58.606Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:16:58.933Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key 404
+[debug] [2022-09-10T11:16:58.933Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:01.037Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:01.354Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:01.355Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazon/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:23.941Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:24.255Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:24.256Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:24.789Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:25.095Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:25.095Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:25.237Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:25.539Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:25.540Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:26.677Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:26.975Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:26.976Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:27.149Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:27.429Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:27.458Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:27.458Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:27.723Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:27.723Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:17:33.013Z] >>> [apiv2][query] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)y/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:33.344Z] <<< [apiv2][status] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)y/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:33.344Z] <<< [apiv2][body] GET https://api.github.com/repos/(format:ronakparmarswaggy/amazon)y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:17:38.643Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:38.954Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:38.954Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:17:40.621Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:40.932Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:40.933Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:17:42.181Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:42.514Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:42.514Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:17:48.813Z] >>> [apiv2][query] GET https://api.github.com/repos/?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:17:49.133Z] <<< [apiv2][status] GET https://api.github.com/repos/?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:17:49.134Z] <<< [apiv2][body] GET https://api.github.com/repos/?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:20:29.285Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:29.587Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:29.587Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:20:36.740Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:37.062Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:37.062Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:37.460Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:37.774Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:37.775Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:37.805Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.016Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.111Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.111Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:38.196Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.320Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.320Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:20:38.350Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.497Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.498Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:38.501Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.638Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.638Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:20:38.644Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.796Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:38.801Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.801Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:38.950Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:38.950Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:20:39.092Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:39.093Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:20:39.236Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:39.534Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:39.535Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:20:39.700Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:20:39.998Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key 404
+[debug] [2022-09-10T11:20:39.998Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmar/amazonclone?/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}
+[debug] [2022-09-10T11:21:37.020Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:37.358Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:37.358Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:38.484Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:38.773Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:38.791Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:38.791Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:38.972Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:39.067Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:39.067Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:21:39.140Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:39.276Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:39.276Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:39.329Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:39.434Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:39.435Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:21:39.478Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:39.642Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:39.642Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:39.770Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:39.770Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:21:39.792Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:40.123Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:40.123Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:40.268Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:40.570Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:40.571Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:40.812Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:41.046Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:41.112Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:41.112Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:41.268Z] >>> [apiv2][query] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key type=owner
+[debug] [2022-09-10T11:21:41.338Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:41.339Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-09-10T11:21:41.564Z] <<< [apiv2][status] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key 404
+[debug] [2022-09-10T11:21:41.565Z] <<< [apiv2][body] GET https://api.github.com/repos/ronakparmarswaggy/amazonclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-09-10T11:21:44.096Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:537:28)
+[error] 
+[error] Error: An unexpected error has occurred.
